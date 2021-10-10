@@ -15,15 +15,15 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git liuran001_packages https://github.com/liuran001/openwrt-packages' >>feeds.conf.default
 
-echo 'src-git packages https://github.com/xiaoqingfengATGH/feeds-packages' >>feeds.conf.default
-echo 'src-git luci https://github.com/xiaoqingfengATGH/feeds-luci' >>feeds.conf.default
-echo 'src-git routing https://github.com/xiaoqingfengATGH/k5-feeds-routing' >>feeds.conf.default
-echo 'src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony' >>feeds.conf.default
-echo 'src-git lienol https://github.com/homelede/openwrt-package.git' >>feeds.conf.default
-echo 'src-git pw https://github.com/homelede/openwrt-passwall.git' >>feeds.conf.default
-echo 'src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng' >>feeds.conf.default
-echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
-echo 'src-git homeclash https://github.com/xiaoqingfengATGH/homeclash.git' >>feeds.conf.default
-echo 'src-git strongswanInDocker https://github.com/xiaoqingfengATGH/luci-app-strongswanInDocker.git' >>feeds.conf.default
+#echo 'src-git packages https://github.com/xiaoqingfengATGH/feeds-packages' >>feeds.conf.default
+#echo 'src-git luci https://github.com/xiaoqingfengATGH/feeds-luci' >>feeds.conf.default
+#echo 'src-git routing https://github.com/xiaoqingfengATGH/k5-feeds-routing' >>feeds.conf.default
+#echo 'src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony' >>feeds.conf.default
+#echo 'src-git lienol https://github.com/homelede/openwrt-package.git' >>feeds.conf.default
+#echo 'src-git pw https://github.com/homelede/openwrt-passwall.git' >>feeds.conf.default
+#echo 'src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng' >>feeds.conf.default
+#echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
+#echo 'src-git homeclash https://github.com/xiaoqingfengATGH/homeclash.git' >>feeds.conf.default
+#echo 'src-git strongswanInDocker https://github.com/xiaoqingfengATGH/luci-app-strongswanInDocker.git' >>feeds.conf.default
