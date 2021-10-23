@@ -15,7 +15,7 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git liuran001_packages https://github.com/liuran001/openwrt-packages' >>feeds.conf.default
+#echo 'src-git liuran001_packages https://github.com/liuran001/openwrt-packages' >>feeds.conf.default
 
 #echo 'src-git packages https://github.com/xiaoqingfengATGH/feeds-packages' >>feeds.conf.default
 #echo 'src-git luci https://github.com/xiaoqingfengATGH/feeds-luci' >>feeds.conf.default
