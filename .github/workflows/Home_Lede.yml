@@ -53,13 +53,12 @@ jobs:
         echo "date4=$(date +'%m.%d.%Y')" >> $GITHUB_ENV
     - name: 克隆源代码
       env: 
-        REPO_URL: https://github.com/coolsnowwolf/lede
+        REPO_URL: https://github.com/xiaoqingfengATGH/HomeLede
         REPO_BRANCH: master
         
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
-        echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
     - name: 设置缓存
       uses: klever1988/cachewrtbuild@main
       with:
@@ -69,19 +68,14 @@ jobs:
     - name: 更新 & 安装 feeds
       working-directory: ./openwrt
       run: |
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
+        ./prepareCompile.sh
     - name: 自定义安装源
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/small-package package/small-package     
     - name: 自定义配置文件Lean
       run: |
-        chmod +x ./customize.sh && ./customize.sh
         cd openwrt 
-        cp -f package/small-package/diy/default-settings package/lean/default-settings/files/zzz-default-settings
-        cp -f package/small-package/diy/banner package/base-files/files/etc/banner
-        cp -f package/small-package/diy/Leandiffconfig .config && make defconfig
+        cp -f deconfig .config && make defconfig
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         
